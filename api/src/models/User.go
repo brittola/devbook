@@ -4,7 +4,7 @@ import "time"
 
 // User representa um usuário do sistema Devbook
 type User struct {
-	ID        uint      `json:"id,omitempty"`
+	ID        uint64    `json:"id,omitempty"`
 	Name      string    `json:"name,omitempty"`
 	Username  string    `json:"username,omitempty"`
 	Email     string    `json:"email,omitempty"`

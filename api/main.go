@@ -13,6 +13,6 @@ func main() {
 
 	r := router.Create()
 
-	fmt.Println("Servidor rodando na porta 3000")
+	fmt.Printf("Servidor rodando na porta %d", config.Port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf("localhost:%d", config.Port), r))
 }
